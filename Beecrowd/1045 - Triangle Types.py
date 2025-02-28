@@ -1,28 +1,35 @@
 a,b,c = map(float,input().split(' '))
 
-if a>=b+c:
+lista=[]
+lista.append(a)
+lista.append(b)
+lista.append(c)
+
+lista_ordenada=sorted(lista)
+print(lista_ordenada)
+
+if lista_ordenada[2]>=lista_ordenada[1]+lista_ordenada[0]:
     print('NAO FORMA TRIANGULO')
 
-if a**2 == (b**2)+(c**2):
+elif lista_ordenada[2]**2 == (lista_ordenada[1]**2)+(lista_ordenada[0]**2):
     print('TRIANGULO RETANGULO')
 
-if a**2 > (b**2)+(c**2):
+elif lista_ordenada[2]**2 > (lista_ordenada[1]**2)+(lista_ordenada[0]**2):
     print('TRIANGULO OBTUSANGULO')
 
-if a**2 < (b**2)+(c**2):
+elif lista_ordenada[2]**2 < (lista_ordenada[1]**2)+(lista_ordenada[0]**2):
     print('TRIANGULO ACUTANGULO')
 
-if a==b==c:
+if lista_ordenada[2]==lista_ordenada[1]==lista_ordenada[0]:
     print('TRIANGULO EQUILATERO')
 
-
-if b==c and a!=b:
+if lista_ordenada[1]==lista_ordenada[0] and lista_ordenada[2]!=lista_ordenada[1]:
     print ('TRIANGULO ISOSCELES')
 
-if a==c and b!=c:
+if lista_ordenada[2]==lista_ordenada[0] and lista_ordenada[1]!=lista_ordenada[0]:
     print ('TRIANGULO ISOSCELES')
 
-if a==b and c!=b:
+if lista_ordenada[2]==lista_ordenada[1] and lista_ordenada[0]!=lista_ordenada[2]:
      print ('TRIANGULO ISOSCELES')
 
 
