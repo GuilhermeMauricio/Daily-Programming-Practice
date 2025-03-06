@@ -6,7 +6,6 @@ lista.append(b)
 lista.append(c)
 
 lista_ordenada=sorted(lista)
-print(lista_ordenada)
 
 if lista_ordenada[2]>=lista_ordenada[1]+lista_ordenada[0]:
     print('NAO FORMA TRIANGULO')
