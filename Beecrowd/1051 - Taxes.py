@@ -6,7 +6,7 @@ if salary>=0 and salary<=2000.00:
 elif salary>=2000.01 and salary<=3000.00:
     Tax_free=salary-2000
     imposto=(Tax_free*0.08)
-    print(imposto)
+    print(f'R$ {imposto:.2f}')
 
 elif salary>=3000.01 and salary<=4500.00:
     Tax_free=salary-2000
@@ -14,7 +14,7 @@ elif salary>=3000.01 and salary<=4500.00:
     por8=1000*0.08
     por18=tax*0.18
     montante=(por18+por8)
-    print(montante)
+    print(f'R$ {montante:.2f}')
 
 elif salary>4.500:
     Tax_free=salary-2000
@@ -23,4 +23,4 @@ elif salary>4.500:
     por18=1500*0.18
     por28=tax*0.28
     montante=(por28+por18+por8)
-    print(montante)
+    print(f'R$ {montante:.2f}')
